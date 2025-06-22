@@ -21,10 +21,17 @@ const CancelDetailsAdmin = ({ booking }: { booking: getBookingType }) => {
     );
   };
 
+  const isDisabled = booking.status === "checkedIn";
+
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline" size="sm" className="cursor-pointer">
+        <Button
+          variant="outline"
+          size="sm"
+          className="cursor-pointer"
+          disabled={isDisabled}
+        >
           <XCircleIcon className="h-4 w-4" />
           Cancel Booking
         </Button>
