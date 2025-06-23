@@ -11,8 +11,9 @@ import { Cabin } from "@/types";
 import { DollarSignIcon, MapPinIcon, UsersIcon } from "lucide-react";
 import Image from "next/image";
 import EditCabinButton from "./edit-cabin-button";
-import DeleteCabinButton from "./delete-cabin";
+
 import { API_URL } from "@/lib/api";
+import DeleteCabinButton from "./delete-cabin";
 
 const ManageCabinCards = ({ cabins }: { cabins: Cabin[] }) => {
   return (

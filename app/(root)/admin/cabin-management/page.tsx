@@ -1,10 +1,10 @@
 import { getAllCabins } from "@/actions/cabin-action";
+import AddCabinButton from "@/components/bookings/admin/manage-bookings/add-cabin-Button";
+import ManageCabinCards from "@/components/bookings/admin/manage-bookings/manage-cabin-cards";
 import BookingHeading from "@/components/bookings/boooking-heading";
 import { Button } from "@/components/ui/button";
 import { ArrowLeftIcon } from "lucide-react";
 import Link from "next/link";
-import ManageCabinCards from "./manage-cabin-cards";
-import AddCabinButton from "./add-cabin-Button";
 
 const CabinManagement = async () => {
   const cabins = await getAllCabins();
